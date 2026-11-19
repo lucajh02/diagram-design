@@ -425,6 +425,9 @@ The profile library is shared across Claude Code, Codex, Factory Droid, and Pi. 
 # From a cloned checkout, open the gallery to see every diagram
 open skills/diagram-design/assets/index.html       # macOS
 xdg-open skills/diagram-design/assets/index.html  # Linux
+
+# Or serve it at http://localhost:8000/ (stdlib only; --port, --open)
+python3 scripts/serve.py
 ```
 
 Then ask your agent for a diagram, like the prompts at the top of this page. A sequence with token refresh uses the ALT combined-fragment grammar in `type-sequence.md`; see [`example-sequence-oauth.html`](skills/diagram-design/assets/example-sequence-oauth.html).
